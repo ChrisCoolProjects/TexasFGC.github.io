@@ -38,7 +38,7 @@
   </script>
 </head>
 
-<body id="page-top">
+<body id="page-top" style="display: none;">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -82,12 +82,6 @@
         </div>
       </div>
     </div>
-    <div class="row pt-5">
-      <div class="col">
-        <div class="alert alert-danger text-center" style="width: 100%" role="alert">
-          <a href="https://game.capcom.com/cfn/sfv/dojo/profile/name/texasfgc_com">Join our SFVI Dojo!</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -110,24 +104,29 @@
     </div>
   </section>
 
-  <section id="tos" class="bg-light">
+  <section id="" ><!--class="bg-light">-->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-center">Tournament Organizers</h2>
-          <p class="lead text-center">People who run events and others who can help you find what you're looking for.</p>
-          <div class="list-group">
-            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">AtlasOmega <span class="badge badge-secondary float-right">Dallas</span></a>
-            <a class="list-group-item" href="https://twitter.com/Omega_Wes">Omega <span class="badge badge-secondary float-right">Denton</span></a>
-            <a class="list-group-item" href="https://twitter.com/GordonGains">GordonGains <span class="badge badge-secondary float-right">Dallas</span></a>
-            <a class="list-group-item" href="https://twitter.com/JimmyOyewole">Jimmy Oyewole <span class="badge badge-secondary float-right">Dallas</span></a>
+          <h2 class="text-center">Regions</h2>
+          <p class="lead text-center">Click here to get a list of the tournaments in the region closest to you!</p>
+          <div class="list-group" style="text-align: center;">
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">Austin</a>
+            <a class="list-group-item" href="DFW.html">Dallas-Fort Worth</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">Houston</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">Rio Grande Valley</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">San Antonio</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">Southeast</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">El Paso</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">West Texas</a>
+            <a class="list-group-item" href="https://twitter.com/AtlasOmega_">Panhandle</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="social">
+<!--  <section id="social">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -177,19 +176,20 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <section id="streamers" class="bg-light">
+  <section id="streamers"><!--class="bg-light">-->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-center">Streamers</h2>
-          <a class="twitch-link" href="https://twitch.tv/texasfgc/"><img style="max-width: 75px;" class="responsive-img mx-auto d-block" src="static/img/twitch.png"></a>
-          <p class="lead text-center">People who run streams in Texas for fighting games.</p> <p class="lead text-center">Click the twitch icon to go to the texasfgc twitch channel.  It is set up to auto host the streamers you see below.</p>
+          <h2 class="text-center">Regional Tournaments</h2>
+          <!--<a class="twitch-link" href="https://twitch.tv/texasfgc/"><img style="max-width: 75px;" class="responsive-img mx-auto d-block" src="static/img/twitch.png"></a>-->
+          <p class="lead text-center">Large scale regional events for fighting games in Texas.</p>
           <div class="list-group">
             <h4>Organizations</h4>
-            <a class="list-group-item" href="https://www.twitch.tv/1life2playFGC/">1Life2Play FGC</a>
-            <a class="list-group-item" href="https://www.twitch.tv/akronzips_fgc/">Akron Zips FGC</a>
+            <a class="list-group-item" href="https://txshowdown.com/">Texas Showdown</a>
+            <a class="list-group-item" href="http://www.tourneylocator.com/">Tourney Locator</a>
+            <hr/><!--
             <a class="list-group-item" href="https://www.twitch.tv/kentfgc">KentFGC</a>
             <a class="list-group-item" href="https://www.twitch.tv/matchstickmelee">MatchStickMelee </a>
             <a class="list-group-item" href="https://www.twitch.tv/outerhaveneleague/">Outer Haven</a>
@@ -219,7 +219,7 @@
             <a class="list-group-item" href="https://www.twitch.tv/shaolinpretzels/">ShaolinPretzels <span class="badge badge-secondary float-right">Samurai Shodown</span><span class="badge badge-secondary float-right">SFV</span><span class="badge badge-secondary float-right">GBVS</span></a>
             <a class="list-group-item" href="https://www.twitch.tv/WatchTheArmory">The Armory <span class="badge badge-secondary float-right">DBFZ</span></a>
             <a class="list-group-item" href="https://www.twitch.tv/thtb614">The Holy Tony Baker <span class="badge badge-secondary float-right">SFV</span><span class="badge badge-secondary float-right">FEXL</span></a>
-          </div>
+          --></div>
         </div>
       </div>
     </div>
@@ -248,3 +248,10 @@
 </body>
 
 </html>
+<script type="text/javascript">
+  window.onload = function () {
+    setTimeout(function () {
+      document.getElementById("body").style.display = "";
+    }, 200);
+  }
+</script>
