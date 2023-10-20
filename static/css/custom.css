@@ -56,6 +56,18 @@ header{
   height: 100%;
 }
 
+.text-center{
+    color: rgb(255, 81, 81);
+    margin-bottom: 25px;
+}
+.list-group{
+    rgb(22, 22, 22);
+}
+.list-group-item{
+    padding: 20px;
+    font-size: 20px;
+}
+
 @media(min-width: 768px){
     .desktop-only{
         display:block;
@@ -65,4 +77,7 @@ header{
     .mobile-only{
         display:block;
     }
+}
+html {
+    background-color: darkgray;
 }
